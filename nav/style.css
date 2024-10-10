@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+body{
+    min-height: 100vh;
+    
+}
+
+
+/*--------------HEADER/NAV----------------*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 250px;
+}
+
+li, a{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+.nav__links{
+    transition: all 0s ease 0s;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+}
+
+.nav__links:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.nav__links:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.pycto{
+    display: inline;
+    padding: 10px;
+}
+
+@media(max-width:1040px){
+    .nav__links{
+        display: none;
+    }
+    .logo{
+        height: 250px;
+    }
+    .univ-logo{
+        height: 30px;
+    }
+    @media(max-width:800px){
+        .logo{
+            height: 150px;
+        }
+        @media(max-width:600px){
+            .logo{
+                height: 100px;
+            }
+        }
+    }
+}
+
+
+/*disparition du menu si witdh > 1020px*/
+@media(min-width: 1040px ){
+    .pyctoM{
+        display: none;
+    }
+}
+.nav-marge{
+    height: 80px;
+}
+
+
+.container-swot{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 30px;
+    
+}
+.swot__links li{
+    display: inline;
+    padding: 20px;
+}
+.swot__links li a{
+    transition: all 0s ease 0s;
+    font-size: 1.5rem;
+    padding: 12px;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+
+    -webkit-transition: all .7s ease-out;
+    -moz-transition: all .7s ease-out;
+    -o-transition: all .7s ease-out;
+    -ms-transition: all .7s ease-out; 
+    transition: all .7s ease-out;
+}
+.swot__links li a:hover {
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ;
+
+    background-color: white;
+    color: black;
+}
+
+
+.main{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.porter h2{
+    font-size: 1.8rem;
+}
+.porter p{
+    font-size: 1.1rem;
+}
+.porter article{
+    padding: 50px;
+}
+.porter li{
+    list-style:disc;
+    margin-left: 50px;
+    font-size: 1.1rem;
+}
+
+
+.rse h2{
+    font-size: 1.8rem;
+}
+.rse p{
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.rse article{
+    padding: 50px;
+}
+.rse li{
+    list-style:disc;
+    margin-left: 50px;
+    font-size: 1.1rem;
+}
+.rseimg{
+    height: 400px;
+    float: right;
+    padding-left: 20px;
+}
+
+.maison p{
+    font-size: 1.1rem;
+}
+
+td,th {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px;
+}
+tr,th{
+    padding: 30px;
+}
+
+td {
+  font-size: 1,8rem;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+
+}
+
+td[scope='col'] {
+    background-color: #000000;
+    color: #fff;
+  }
+
+th[scope='col'] {
+  background-color: #000000;
+  color: #fff;
+}
+
+th[scope='row'] {
+  background-color: #000000;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+}
+
+table {
+  border-collapse: collapse;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+
+}
+
+.source li{
+    line-height: 3rem;
+    list-style:disc;
+    margin-left: 50px;
+    font-size: 1.1rem;
+}
+.source article{
+    padding: 50px;
+}
+
+.swot h2{
+    font-size: 1.8rem;
+}
+.swot p{
+    font-size: 1.1rem;
+}
+
+.force{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.faiblesse{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.menace1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.menace {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.opportunite{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.swotimg{
+    height: 500px;
+}
+
+
+.loc-iframe{
+    height: 100vh;
+    width: 100%;
+    border: 0;
+    display: block;
+    align-items: center;
+}
+@media(max-width: 1040px){
+    .rseimg{
+        height: 300px;
+    }
+    .swotimg{
+        height: 200px;
+    }
+    .main{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    @media(max-width: 800px ){
+        .main{
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        .swotimg{
+            height: 200px;
+        }
+        .rseimg{
+            height: 200px;
+        }
+        @media (max-width:600px) {
+            .rseimg{
+                display: none;
+            }
+            .swotimg{
+                display: none;
+            }
+        }
+    }
+}
+/*----------------------FOOTER----------------------*/
+
+.footer-block{
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    max-height: 1000px;
+    background-color: rgb(51, 51, 51);
+    padding: 0px 100px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.cont {
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 50px; 
+
+}
+.up-arrow{
+    float: right;
+}
+
+.footer-line{
+    position: relative;
+    margin-top: 100px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+
+}
+
+.bottom-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social{
+    padding-top: 20px;
+}
+
+.social-logo{
+    display: inline;
+    padding: 10px;
+}
+
+.univ-logo{
+    height: 80px;
+    padding-top: 20px;
+}
+@media(max-width:1040px){
+    .footer-block{
+        padding: 0 20px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+
+    }
+    .cont{
+        font-size: 0.7rem;
+    }
+    .univ-logo{
+        height: 65px;
+    }
+    @media(max-width:800px){
+        .univ-logo{
+            height: 50px;
+        }
+    }
+}

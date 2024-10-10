@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+body{
+    min-height: 100vh;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 250px;
+}
+
+li, a{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+.nav__links{
+    transition: all 0s ease 0s;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+.nav__links{
+    display: inline;
+    padding: 20px;
+}
+.nav__links:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.nav__links:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.pycto{
+    display: inline;
+    padding: 10px;
+}
+
+
+@media(max-width:1040px){
+    .nav__links{
+        display: none;
+    }
+    .logo{
+        height: 250px;
+    }
+    .univ-logo{
+        height: 30px;
+    }
+    @media(max-width:800px){
+        .logo{
+            height: 150px;
+        }
+        @media(max-width:600px){
+            .logo{
+                height: 100px;
+            }
+        }
+    }
+}
+
+
+/*disparition du menu si witdh > 1020px*/
+@media(min-width: 1040px ){
+    .pyctoM{
+        display: none;
+    }
+}
+
+
+.main{
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+}
+table{
+    display: flex;
+    justify-content: center;
+    
+}
+tr, th{
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.accueilimg{
+    height: 600px;
+
+}
+
+
+@media(max-width: 1040px){
+    .accueilimg{
+        height: 400px;
+    }
+    @media(max-width: 800px){
+        .accueilimg{
+            height: 300px;
+        }
+        @media(max-width:600px){
+            .accueilimg{
+                height: 200px;
+            }
+        }
+    }
+}
+
+
+/*----------------------FOOTER----------------------*/
+
+.footer-block{
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    max-height: 1000px;
+    background-color: rgb(51, 51, 51);
+    padding: 0px 100px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.cont {
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 50px; 
+
+}
+.up-arrow{
+    float: right;
+}
+.footer-line{
+    position: relative;
+    margin-top: 100px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+
+}
+
+.bottom-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social{
+    padding-top: 20px;
+}
+
+.social-logo{
+    display: inline;
+    padding: 10px;
+}
+
+.univ-logo{
+    height: 80px;
+    padding-top: 20px;
+}
+@media(max-width:1040px){
+    .footer-block{
+        padding: 0 20px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+
+    }
+    .cont{
+        font-size: 0.7rem;
+    }
+    .univ-logo{
+        height: 65px;
+    }
+    @media(max-width:800px){
+        .univ-logo{
+            height: 50px;
+        }
+    }
+}
